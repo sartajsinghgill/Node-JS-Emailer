@@ -35,6 +35,7 @@ function sendEmail() {
       }
       transporter.sendMail(mail_options)
       sent_ids.push(list_ids[i])
+      console.log('Email sent to : '+list_ids[i])
       i++
     }
     else {
